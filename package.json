@@ -1,38 +1,36 @@
 {
-  "name": "nedb",
+  "name": "@moers/nedb",
   "version": "1.8.0",
-  "author": {
-    "name": "Louis Chatriot",
-    "email": "louis.chatriot@gmail.com"
-  },
+  "author": "Boris Moers",
   "contributors": [
-    "Louis Chatriot"
+    "Louis Chatriot",
+    "Boris Moers"
   ],
-  "description": "File-based embedded data store for node.js",
+  "description": "[Fork of 'Louis Chatriot' version] File-based embedded data store for node.js",
   "keywords": [
     "database",
     "datastore",
     "embedded"
   ],
-  "homepage": "https://github.com/louischatriot/nedb",
+  "homepage": "https://github.com/bmoers/nedb",
   "repository": {
     "type": "git",
-    "url": "git@github.com:louischatriot/nedb.git"
+    "url": "git@github.com:bmoers/nedb.git"
   },
   "dependencies": {
+    "@moers/binary-search-tree": "^0.3.0",
     "async": "0.2.10",
-    "binary-search-tree": "0.2.5",
     "localforage": "^1.3.0",
     "mkdirp": "~0.5.1",
-    "underscore": "~1.4.4"
+    "underscore": "^1.13.1"
   },
   "devDependencies": {
-    "chai": "^3.2.0",
-    "mocha": "1.4.x",
-    "request": "2.9.x",
-    "sinon": "1.3.x",
-    "exec-time": "0.0.2",
-    "commander": "1.1.1"
+    "chai": "^4.3.4",
+    "commander": "^8.1.0",
+    "exec-time": "^0.0.4",
+    "mocha": "^9.0.3",
+    "request": "^2.88.2",
+    "sinon": "^11.1.2"
   },
   "scripts": {
     "test": "./node_modules/.bin/mocha --reporter spec --timeout 10000"
